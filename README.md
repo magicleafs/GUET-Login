@@ -4,6 +4,7 @@
 windows
 
 ## 下载安装
+* [最新版本](https://github.com/magicleafs/GUET-Login/releases)
 
 ## 使用说明
 
