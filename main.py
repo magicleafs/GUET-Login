@@ -6,8 +6,8 @@ import SaveLoginInfo
 from tkinter import messagebox
 
 
+# 自动登录
 def AutoLogin():
-
     global sid, pwd
     m_tuple = SaveLoginInfo.ReadInfo()
     sid = m_tuple[0]
@@ -58,7 +58,7 @@ def login():
         if var1.get() == 0:
             print('已保存')
             tk.messagebox.showinfo(title='提示', message='已保存')
-            SaveLoginInfo.SaveInfo(sid, pwd, var1.get(), var2.get(), var3.get(),var4.get())
+            SaveLoginInfo.SaveInfo(sid, pwd, var1.get(), var2.get(), var3.get(), var4.get())
     else:
         print('登录失败')
         tk.messagebox.showinfo(title='提示', message='登录失败\n账号或密码错误')
@@ -82,7 +82,6 @@ p = tk.StringVar()
 password = tk.Entry(window, show="*", textvariable=p)
 password.pack()
 
-
 var1 = tk.IntVar()
 Save = tk.Checkbutton(window, text='保存密码', variable=var1, onvalue=0, offvalue=1)  # 保存密码复选框
 Save.pack()
@@ -92,10 +91,8 @@ Autologin = tk.Checkbutton(window, text='自动登录', variable=var2, onvalue=1
 Autologin.pack()
 
 var4 = tk.IntVar()
-AutoExit= tk.Checkbutton(window, text='登录成功后退出', variable=var4, onvalue=1, offvalue=0)
+AutoExit = tk.Checkbutton(window, text='登录成功后退出', variable=var4, onvalue=1, offvalue=0)
 AutoExit.pack()
-
-
 
 """
 t = tk.Text(window,height=2)
@@ -109,9 +106,8 @@ if SaveLoginInfo.isExist():
     var4.set(SaveLoginInfo.Read_Var4())
     var2.set(SaveLoginInfo.Read_Var2())
     var3.set(SaveLoginInfo.Read_Var3())
-    if var2.get()==1:
+    if var2.get() == 1:
         AutoLogin()
-
 
 isp1 = tk.Radiobutton(window, text='校园网', variable=var3, value=1)
 isp1.pack(side='left')
