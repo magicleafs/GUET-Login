@@ -8,7 +8,7 @@ windows
 * 支持自动登录
 * 支持登录后自动退出程序
 * 新增了一键重置功能，回到第一次使用的状态
-[历史更新](https://github.com/magicleafs/GUET-Login/blob/main/%E6%9B%B4%E6%96%B0%E8%AF%B4%E6%98%8E.md)
+## [历史更新](https://github.com/magicleafs/GUET-Login/blob/main/%E6%9B%B4%E6%96%B0%E8%AF%B4%E6%98%8E.md)
 ### 目前已知bug/问题
 * 勾选了自动登录但未勾选自动登录退出，会导致输入框无法使用（可以点击一次登录进行刷新），将在后续版本修复。
 * 界面不够美观，布局凌乱。
