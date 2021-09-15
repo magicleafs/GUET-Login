@@ -1,10 +1,10 @@
-import tkinter as tk
 from tkinter import messagebox
 import time
 import sys
 import os.path
 
 
+# 保存相关信息
 def SaveInfo(m_sid, m_pwd, m_var1, m_var2, m_var3, m_var4):
     fp = open("D:/Weblogin.txt", "w")
     sid = m_sid
@@ -43,23 +43,9 @@ def ReadInfo():
 
 
 def find_isp(var3):
+    import tkinter as tk
+
     flag = var3.get()
-    if flag == 2:
-        print('登录成功')
-        tk.messagebox.showinfo(title='提示', message='登录成功\n当前运营商：中国移动')
-    elif flag == 3:
-        print('登录成功')
-        tk.messagebox.showinfo(title='提示', message='登录成功\n当前运营商：中国电信')
-    elif flag == 4:
-        print('登录成功')
-        tk.messagebox.showinfo(title='提示', message='登录成功\n当前运营商：中国联通')
-    else:
-        print('登录成功')
-        tk.messagebox.showinfo(title='提示', message='登录成功\n当前运营商：校园网')
-
-
-def find_isp2(var3):
-    flag = var3
     if flag == 2:
         print('登录成功')
         tk.messagebox.showinfo(title='提示', message='登录成功\n当前运营商：中国移动')
@@ -100,3 +86,7 @@ def isExist():
 
 def reset():
     os.system('del D:\Weblogin.txt')
+
+
+def Read_Var1():
+    return int(ReadInfo()[2])
