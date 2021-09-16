@@ -33,7 +33,7 @@ windows
 
 * 可以在本项目发表新的issue
 * qq群暂时还没建
-* 电话
+* [电报交流群](https://t.me/GUET_Login)
 ## 未来蓝图
 
 * 美化界面UI
