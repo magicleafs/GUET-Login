@@ -1,12 +1,12 @@
 import requests
 import tkinter as tk
-import SaveLoginInfo
+import Save_Info
 from tkinter import messagebox
 
 
 # 自动登录
 def AutoLogin():
-    m_tuple = SaveLoginInfo.ReadInfo()
+    m_tuple = Save_Info.ReadInfo()
     u.set(m_tuple[0])
     p.set(m_tuple[1])
     var3.set(int(m_tuple[4]))
@@ -32,13 +32,13 @@ def login():
     req = str(req.text)
     find_str = 'result":1'
     if find_str in req:
-        SaveLoginInfo.find_isp(var3)
+        Save_Info.find_isp(var3)
         if var1.get() == 1:
             print('已保存')
             tk.messagebox.showinfo(title='提示', message='已保存')
-            SaveLoginInfo.SaveInfo(sid, pwd, var1.get(), var2.get(), var3.get(), var4.get())
+            Save_Info.SaveInfo(sid, pwd, var1.get(), var2.get(), var3.get(), var4.get())
         else:
-            SaveLoginInfo.SaveInfo(sid, pwd, var1.get(), var2.get(), var3.get(), var4.get())
+            Save_Info.SaveInfo(sid, pwd, var1.get(), var2.get(), var3.get(), var4.get())
     else:
         print('登录失败')
         tk.messagebox.showinfo(title='提示', message='登录失败\n账号或密码错误')
@@ -97,16 +97,17 @@ isp4.pack(side='right')
 
 b = tk.Button(window, text="登入网络", bg="green", command=login)  # 登录按钮
 b.pack()
-b2 = tk.Button(window, text="一键重置", bg="red", command=SaveLoginInfo.reset)  # 清除按钮
+b2 = tk.Button(window, text="一键重置", bg="red", command=Save_Info.reset)  # 清除按钮
 b2.pack()
 
-if SaveLoginInfo.isExist():
-    var1.set(SaveLoginInfo.Read_Var1())
-    var4.set(SaveLoginInfo.Read_Var4())
-    var2.set(SaveLoginInfo.Read_Var2())
-    var3.set(SaveLoginInfo.Read_Var3())
+if Save_Info.isExist():
+    if Save_Info.isEmpty() == 0:
+        var1.set(Save_Info.Read_Var1())
+        var4.set(Save_Info.Read_Var4())
+        var2.set(Save_Info.Read_Var2())
+        var3.set(Save_Info.Read_Var3())
     if var1.get() == 1:
-        m_tuple2 = SaveLoginInfo.ReadInfo()
+        m_tuple2 = Save_Info.ReadInfo()
         u.set(m_tuple2[0])
         p.set(m_tuple2[1])
     if var2.get() == 1:
