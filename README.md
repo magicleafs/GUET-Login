@@ -10,7 +10,7 @@ windows
 
 ### [历史更新](https://github.com/magicleafs/GUET-Login/blob/main/%E6%9B%B4%E6%96%B0%E8%AF%B4%E6%98%8E.md)
 ### 目前已知bug/问题
-
+* 如果用户误删除保存密码文件中的内容，会引发崩溃
 * 界面不够美观，布局凌乱。
 
 ## 下载安装
