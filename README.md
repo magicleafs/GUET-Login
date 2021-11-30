@@ -42,7 +42,7 @@ windows
 
 ## 版权声明
 
-本项目使用 GPL3.0 开源
+本项目使用 [GPL3.0](https://github.com/magicleafs/GUET-Login/blob/main/LICENSE) 开源
 
 ## 声明
 本项目与学校官方无关，仅作交流学习
