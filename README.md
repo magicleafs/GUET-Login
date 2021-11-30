@@ -10,7 +10,7 @@ windows
 ### [历史更新](https://github.com/magicleafs/GUET-Login/blob/main/%E6%9B%B4%E6%96%B0%E8%AF%B4%E6%98%8E.md)
 ### 目前已知bug/问题
 
-* 开机自启功能出现bug，已经将其代码注释，在前端界面勾选不会有任何效果
+* 开机自启功能出现bug(求助┭┮﹏┭┮，不知道咋解决，恳请来个大佬)，已经将其代码注释，在前端界面勾选不会有任何效果
 
 ## 下载安装
 * [最新版本](https://github.com/magicleafs/GUET-Login/releases)
