@@ -15,9 +15,11 @@ windows
 ## 下载安装
 * [最新版本](https://github.com/magicleafs/GUET-Login/releases)
 
-## 使用说明
+## 使用方法
 
 直接输入账号（学号）和密码，选择运营商，然后点击登录按钮
+
+详情请看 [这里](https://github.com/magicleafs/GUET-Login/blob/main/%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.txt)
 
 ## 开机自启动的手动添加方法
 * 首先 快捷键 win+R 打开运行
