@@ -51,7 +51,7 @@ windows
 ## 交流反馈
 
 * 可以在本项目发表新的issue
-* qq群: 811657383
+* qq群: 已废弃
 * [电报交流群](https://t.me/GUET_Login)
 
 
